@@ -95,4 +95,4 @@ ReactDOM.render(<Index />, document.getElementById("index"));
 </body>
 </html>
 ```
-10. Create **.gitignore** file and input **/node_modules/**.
+10. Create **.gitignore** file and input **/node_modules/** and **/dist**.
