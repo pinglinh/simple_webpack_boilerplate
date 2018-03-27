@@ -33,10 +33,12 @@ npm i babel-core babel-loader babel-preset-env babel-preset-react css-loader htm
 5. Create **webpack.config.js** file with the following configurations:
 ```
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+
 const htmlWebpackPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
   filename: "./index.html"
 });
+
 module.exports = {
   module: {
     rules: [
@@ -75,9 +77,11 @@ module.exports = {
 ```
 import React from "react";
 import ReactDOM from "react-dom";
+
 const Index = () => {
   return <div>Hello React!</div>;
 };
+
 ReactDOM.render(<Index />, document.getElementById("index"));
 ```
 9. **index.html** should have:
